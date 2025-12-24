@@ -23,7 +23,7 @@
 ## Tutorial: How to Use Wackify
 
 ### Step 1
-Import the **RBXM** of the latest version of Wackify and locate the **Frame** you want to turn into a code editor.
+Import the **RBXM** of the [latest version of Wackify](https://github.com/C-Dr1ve/Wackify/releases/tag/RBXM) and locate the **Frame** you want to turn into a code editor.
 
 ### Step 2
 Create a **LocalScript** and place it near both the **Wackify module** and the **Frame** you want to convert into a code editor.  
