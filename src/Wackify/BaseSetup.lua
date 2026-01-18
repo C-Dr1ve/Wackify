@@ -53,7 +53,7 @@ local setup = { Run = function(frame: Frame)
 	textbox.TextXAlignment = Enum.TextXAlignment.Left
 	textbox.TextYAlignment = Enum.TextYAlignment.Top
 	textbox.Font = Enum.Font.Code
-	textbox.Text = "print(\"Hello world!\")"
+	textbox.Text = [[print("Hello serversided world!")]]
 	textbox.Name = "TextBox"
 	textbox.Position = UDim2.new(0,distance,0,0)
 	textbox.ZIndex = 2
