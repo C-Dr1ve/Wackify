@@ -181,22 +181,22 @@ end
 
 local function updateColors(colors)
 	-- Setup color data
-	TokenColors.background = (colors and colors.background) or {Color = Color3.fromRGB(255, 255, 255)}
-	TokenColors.iden = (colors and colors.iden) or {Color = Color3.fromRGB(156, 220, 254)}
-	TokenColors.keyword = (colors and colors.keyword) or {Color = Color3.fromRGB(255, 173, 250)}
-	TokenColors.variable = (colors and colors.variable) or {Color = Color3.fromRGB(102, 186, 255)}
-	TokenColors.builtin = (colors and colors.builtin) or {Color = Color3.fromRGB(255, 255, 197)}
-	TokenColors.string = (colors and colors.string) or {Color = Color3.fromRGB(255, 179, 149)}
-	TokenColors.number = (colors and colors.number) or {Color = Color3.fromRGB(224, 255, 208)}
-	TokenColors.comment = (colors and colors.comment) or {Color = Color3.fromRGB(152, 216, 120)}
-	TokenColors.operator = (colors and colors.operator) or {Color = Color3.fromRGB(255, 215, 0)}
-	TokenColors.localmethod = (colors and colors.localmethod) or {Color = Color3.fromRGB(255, 255, 197)}
-	TokenColors.properties = (colors and colors.properties) or {Color = Color3.fromRGB(88, 210, 255)}
-	TokenColors.boolean = (colors and colors.boolean) or {Color = Color3.fromRGB(102, 186, 255)}
-	TokenColors.localproperty = (colors and colors.localproperty) or {Color = Color3.fromRGB(99, 255, 221)}
-	TokenColors.todo = (colors and colors.todo) or {Color = Color3.fromRGB(255, 201, 37), IsBold = true}
-	TokenColors.link = (colors and colors.link) or {Color = Color3.fromRGB(51, 173, 255), IsUnderlined = true}
-	TokenColors.custom = (colors and colors.custom) or {Color = Color3.fromRGB(144, 194, 255), IsBold = true}
+	TokenColors.background = (colors and colors.background) or {Color = Color3.fromRGB(36, 36, 36)}
+	TokenColors.iden = (colors and colors.iden) or {Color = Color3.fromRGB(204, 204, 204)}
+	TokenColors.keyword = (colors and colors.keyword) or {Color = Color3.fromRGB(248, 109, 124)}
+	TokenColors.variable = (colors and colors.variable) or {Color = Color3.fromRGB(204, 204, 204)}
+	TokenColors.builtin = (colors and colors.builtin) or {Color = Color3.fromRGB(132, 214, 247)}
+	TokenColors.string = (colors and colors.string) or {Color = Color3.fromRGB(173, 241, 149)}
+	TokenColors.number = (colors and colors.number) or {Color = Color3.fromRGB(255, 198, 0)}
+	TokenColors.comment = (colors and colors.comment) or {Color = Color3.fromRGB(102, 102, 102)}
+	TokenColors.operator = (colors and colors.operator) or {Color = Color3.fromRGB(204, 204, 204)}
+	TokenColors.localmethod = (colors and colors.localmethod) or {Color = Color3.fromRGB(253, 251, 172)}
+	TokenColors.properties = (colors and colors.properties) or {Color = Color3.fromRGB(97, 161, 241)}
+	TokenColors.boolean = (colors and colors.boolean) or {Color = Color3.fromRGB(255, 198, 0)}
+	TokenColors.localproperty = (colors and colors.localproperty) or {Color = Color3.fromRGB(97, 161, 241)}
+	TokenColors.todo = (colors and colors.todo) or {Color = Color3.fromRGB(141, 118, 0), IsBold = true}
+	TokenColors.link = (colors and colors.link) or {Color = Color3.fromRGB(11, 90, 175), IsUnderlined = true}
+	TokenColors.custom = (colors and colors.custom) or {Color = Color3.fromRGB(253, 251, 172), IsBold = true}
 
 	for key, value in pairs(TokenColors) do
 		if not value.IsBold then
