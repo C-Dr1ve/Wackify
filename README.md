@@ -38,4 +38,4 @@ You're done!
 
 
 # Show your support
-Give a ⭐️ if this project helped you or join our [Discord](https://discord.gg/EfC7sNuzNJ) !
+Give a ⭐️ if this project helped you or join our [Discord](https://discord.gg/WVtdkdDgXH) !
