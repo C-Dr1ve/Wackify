@@ -259,7 +259,7 @@ function module:New(args)
 	
 	--// Stage 7: Setting up the custom cursor\\--
 	local dist = 0
-	local interval = 0.4
+	local interval = config.CursorBlinkingSpeed
 	local blinking = false
 	local typing = false
 	local idlewait = 0
