@@ -31,7 +31,7 @@ Insert the following code into the **LocalScript**:
 
 ```lua
 local wackify = require(Path.To.The.Wackify.Module)
-wackify:New({ Target = script.Parent.Wackify, Theme = "Dark", StartingCode = 'print("Hello world!")' })
+wackify:New({ Target = Path.To.The.Target.Frame, Theme = "Dark", StartingCode = 'print("Hello world!")' })
 ```
 
 Themes include:
@@ -49,9 +49,9 @@ Or if you would like, you can import your own custom theme by taking a already e
 
 ```lua
 local wackify = require(Path.To.The.Wackify.Module)
-wackify:New({ Target = script.Parent.Wackify, Theme = {
-		LinesBackground = {...
-	}, StartingCode = 'print("Hello world!")' })
+wackify:New({ Target = Path.To.The.Target.Frame, Theme = {
+	LinesBackground = {...
+}, StartingCode = 'print("Hello world!")' })
 ```
 
 ### Step 3
