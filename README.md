@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/StrawberryRBLX/Strawberry-Scanner/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained-yes-green.svg" />
   </a>
@@ -23,19 +23,39 @@
 ## Tutorial: How to Use Wackify
 
 ### Step 1
-Import the **RBXM** of the [latest version of Wackify](https://github.com/C-Dr1ve/Wackify/releases/tag/RBXM) and locate the **Frame** you want to turn into a code editor.
+Import the **RBXM** of the [latest version of Wackify](https://github.com/C-Dr1ve/Wackify/releases) and locate the **Frame** you want to turn into a code editor.
 
 ### Step 2
 Create a **LocalScript** and place it near both the **Wackify module** and the **Frame** you want to convert into a code editor.  
 Insert the following code into the **LocalScript**:
 
 ```lua
-require(Path.To.Wackify.Module).Wackify(Path.To.The.Frame)
+local wackify = require(Path.To.The.Wackify.Module)
+wackify:New({ Target = script.Parent.Wackify, Theme = "Dark", StartingCode = 'print("Hello world!")' })
+```
+
+Themes include:
+- Dark
+- Light
+- Dracula
+- Terminal
+- Catppuccin Latte
+- Catppuccin Frappe
+- Catppuccin Macchiato
+- Catppuccin Mocha
+-# More coming soon...
+
+Or if you would like, you can import your own custom theme by taking a already existing theme form the "Themes" module and changing it up. Then you can import the table into the "wackify:New()" Theme variable, something like this:
+
+```lua
+local wackify = require(Path.To.The.Wackify.Module)
+wackify:New({ Target = script.Parent.Wackify, Theme = {
+		LinesBackground = {...
+	}, StartingCode = 'print("Hello world!")' })
 ```
 
 ### Step 3
 You're done!
 
-
 # Show your support
-Give a ⭐️ if this project helped you or join our [Discord](https://discord.gg/WVtdkdDgXH) !
+Give a ⭐️ if this project helped you or join our [Discord](https://discord.gg/WVtdkdDgXH)!
